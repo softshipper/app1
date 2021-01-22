@@ -1,0 +1,16 @@
+<mvc:View controllerName="io.example.app1.controller.First" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f"
+	xmlns:l="sap.ui.layout" height="100%">
+	<Page id="page" title="{i18n>title}">
+		<content>
+			<FlexBox alignItems="Start" justifyContent="Center">
+				<l:Grid containerQuery="true" defaultSpan="XL12 L12 M12 S12">
+					<Label text=""/>
+					<Text text="Hello Kitty"/>
+					<Input placeholder="Enter your email address" id="email" type="Email" value="{confirm>/email}" liveChange="onHandleLiveChangeEmail"/>
+					<Button type="Accept" enabled="{confirm>/enable}" text="Hello" press="handlePressAuthorization"
+						ariaDescribedBy="acceptButtonDescription genericButtonDescription" width="100%"></Button>
+				</l:Grid>
+			</FlexBox>
+		</content>
+	</Page>
+</mvc:View>

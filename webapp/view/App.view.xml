@@ -1,0 +1,5 @@
+<mvc:View controllerName="io.example.app1.controller.App" displayBlock="true" xmlns="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m">
+	<m:Shell id="shell">
+		<FlexibleColumnLayout id="fcl" stateChange="onStateChanged" layout="{/layout}" backgroundDesign="Solid"></FlexibleColumnLayout>
+	</m:Shell>
+</mvc:View>
